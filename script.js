@@ -3,7 +3,6 @@ const colorInput = document.getElementById('color');
 const selectInput = document.getElementById('mode');
 const colorPaletteContainer = document.querySelector('.color-palette-container');
 
-
 fetch(`https://www.thecolorapi.com/scheme?hex=66CCFF&mode=analogic`)
     .then(res => res.json())
     .then(data => renderPalette(data));
